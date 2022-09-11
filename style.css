@@ -6,8 +6,9 @@
 	scroll-behavior: smooth;
 }
 
+
 header {
-	background: #1A2238;
+	background: #888888;
 	color: #eaeaea;
 	display: flex;
 	flex-wrap: wrap;
@@ -34,8 +35,14 @@ header {
 }
 
 .logo:hover {
-	color: #FF6A3D;
+	color: #851f00;
 	transform: rotate(2deg);
+}
+
+.btn-cta:hover {
+	box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
+	background: #004e0a;
+	margin-right: 11px;
 }
 
 .btn-cta {
@@ -43,11 +50,13 @@ header {
 	border: none;
 	font-size: 20px;
 	padding: 6px 12px;
-	background: #FF6A3D;
+	background: #009714;
 	color: #eaeaea;
 	border-radius: 8px;
 	cursor: pointer;
+	box-shadow: 2px 5px 5px 1px rgba(0,0,0,0.5);
 }
+
 
 nav ul{
 	display: flex;
@@ -106,6 +115,7 @@ a {
 	max-width: 500px;
 }
 
+
 .parallax {
 	background-image: url('assets/foto/bg.png');
 	background-attachment: fixed;
@@ -139,6 +149,7 @@ a {
 }
 
 .card-item {
+	border-radius: 8px;
 	text-align: center;
 	width: 25%;
 	min-height: 200px;
@@ -152,6 +163,7 @@ a {
 .card-title {
 	font-size: 18px;
 	font-weight: bolder;
+	margin-top: 5px;
 }
 
 .card-description {
@@ -174,6 +186,7 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+
 	.card {
 		flex-direction: column;
 		gap: 0;
@@ -181,6 +194,24 @@ footer {
 	.card-item {
 		width: 100%;
 		opacity: 0.9;
+	}
+
+	.btn-cta:hover {
+		box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.5);
+		background: #004e0a;
+		margin-right: 11px;
+	}
+	
+	.btn-cta {
+		margin-right: 10px;
+		border: none;
+		font-size: 20px;
+		padding: 6px 12px;
+		background: #009714;
+		color: #eaeaea;
+		border-radius: 8px;
+		cursor: pointer;
+		box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.5);
 	}
 	
 	.container {
@@ -195,17 +226,24 @@ footer {
 	.img-foto {
 		padding: 0;
 	}
-	
+
 	nav {
 		position: fixed;
 		bottom: 0;
 		width: 100%;
 		background: #1A2238;
 		z-index: 9;
+		
+	}
+
+	li {
+		padding-bottom: 0.01px;
+		margin: 5px;
+		
 	}
 	
 	footer {
 		margin-bottom: 70px;
-		margin-top: 70px;
+		margin-top: 130px;
 	}
 }
